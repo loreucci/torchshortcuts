@@ -57,7 +57,7 @@ def train(model, trainloader, testloader, criterion, optimizer, epochs,
                 _, _, test_str = validation(model, testloader, criterion=criterion, input_transform=input_transform)
 
                 print("Epoch {}/{}: ".format(e+1, epochs),
-                      "test loss={:.3f}".format(training_loss/print_every),
+                      "training loss={:.3f}".format(training_loss/print_every),
                       test_str)
 
                 model.train()
